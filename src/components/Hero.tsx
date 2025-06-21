@@ -188,7 +188,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
         </div>
 
         {/* Social Proof */}
-        <div className={`mt-8 transform transition-all duration-1000 delay-900 ${
+        <div className={`mt-8 mb-16 transform transition-all duration-1000 delay-900 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white">
@@ -199,7 +199,9 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
         </div>
 
         {/* Scroll Indicator */}
-        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${
+
+        <div className={`absolute bottom-2 inset-x-0 flex justify-center transition-all duration-1000 delay-1000 ${
+      
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <button 
