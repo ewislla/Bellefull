@@ -12,9 +12,9 @@ const Hero = () => {
   });
 
   // Set launch date (45 days from now for demo)
-  const launchDate = new Date();
-  launchDate.setDate(launchDate.getDate() + 45);
-
+  // Set a fixed launch date that's the same for all users
+const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
