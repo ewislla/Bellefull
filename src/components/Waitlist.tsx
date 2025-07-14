@@ -344,13 +344,13 @@ const Waitlist = () => {
               <div className="bg-white rounded-xl p-6 shadow-lg border border-[#D4A95E]/10">
                 <div className="flex items-center mb-4">
                   <MapPin className="w-6 h-6 text-[#D4A95E] mr-3" />
-                  <h4 className="font-serif text-xl font-bold text-[#2E4057]">Coming to New York</h4>
+                  <h4 className="font-serif text-xl font-bold text-[#2E4057]"> Amassoma, Bayelsa State.</h4>
                 </div>
                 <p className="text-[#2E4057]/70 text-sm mb-4">
-                  Located in the heart of the Heritage District, bringing authentic Afro-contemporary cuisine to New York's vibrant food scene.
+                  Located Beside Goin-ama town hall Alamieyeseigha expressway Amassoma, Bayelsa State.
                 </p>
                 <div className="flex items-center text-sm text-[#2E4057]/60">
-                  <span>Join 134 others in New York already on the waitlist</span>
+                  <span>Join 134 others in Bayelsa Stat already on the waitlist</span>
                 </div>
               </div>
 

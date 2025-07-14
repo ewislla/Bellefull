@@ -48,7 +48,7 @@ const Location = () => {
             Visit Us
           </h2>
           <p className="text-lg lg:text-xl text-[#2E4057]/70 max-w-3xl mx-auto">
-            Located in the heart of the cultural district, where tradition meets modernity
+            Located  Beside Goin-ama town hall Alamieyeseigha expressway Amassoma, Bayelsa State.
           </p>
         </div>
 
@@ -75,9 +75,9 @@ const Location = () => {
                   <div>
                     <h3 className="font-semibold text-[#2E4057] text-base lg:text-lg mb-1">Address</h3>
                     <p className="text-[#2E4057]/70 text-sm lg:text-base">
-                      123 Cultural Avenue<br />
-                      Heritage District<br />
-                      New York, NY 10001
+                      Beside Goin-ama town hall <br />
+                      Alamieyeseigha expressway<br />
+                      Amassoma, Bayelsa State.
                     </p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Location = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-[#2E4057] text-sm lg:text-base">Phone</p>
-                      <p className="text-[#2E4057]/70 text-sm lg:text-base">(555) 123-4567</p>
+                      <p className="text-[#2E4057]/70 text-sm lg:text-base">+234 8123327359 </p>
                     </div>
                   </a>
 

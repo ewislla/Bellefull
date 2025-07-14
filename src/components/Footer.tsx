@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter, Heart, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Twitter , Heart, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -29,19 +29,14 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a 
-                href="#"
+                href="https://www.instagram.com/bellefulofficial?igsh=dDIxb3hmd251dWU0"
                 className="w-10 h-10 bg-[#D4A95E]/10 rounded-full flex items-center justify-center hover:bg-[#D4A95E] transition-all duration-200 group"
               >
                 <Instagram className="w-5 h-5 text-[#D4A95E] group-hover:text-[#2E4057]" />
               </a>
+              
               <a 
-                href="#"
-                className="w-10 h-10 bg-[#D4A95E]/10 rounded-full flex items-center justify-center hover:bg-[#D4A95E] transition-all duration-200 group"
-              >
-                <Facebook className="w-5 h-5 text-[#D4A95E] group-hover:text-[#2E4057]" />
-              </a>
-              <a 
-                href="#"
+                href="https://x.com/bellefulhq?s=21"
                 className="w-10 h-10 bg-[#D4A95E]/10 rounded-full flex items-center justify-center hover:bg-[#D4A95E] transition-all duration-200 group"
               >
                 <Twitter className="w-5 h-5 text-[#D4A95E] group-hover:text-[#2E4057]" />
@@ -141,9 +136,9 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-[#D4A95E] mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">
-                    123 Cultural Avenue<br />
-                    Heritage District<br />
-                    New York, NY 10001
+                     Beside Goin-ama town hall <br />
+                      Alamieyeseigha expressway<br />
+                      Amassoma, Bayelsa State.
                   </p>
                 </div>
               </div>
@@ -154,7 +149,7 @@ const Footer = () => {
                   href="tel:+15551234567"
                   className="text-gray-300 hover:text-[#D4A95E] transition-colors duration-200"
                 >
-                  (555) 123-4567
+                  +234 8123327359
                 </a>
               </div>
               
