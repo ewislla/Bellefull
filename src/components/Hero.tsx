@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, Play, Calendar, Users, Gift, Crown } from 'lucide-react';
+import { ChevronDown, Play, Crown } from 'lucide-react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,7 +66,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
             backgroundImage: 'url("assets/hero-bg.png")'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2E4057]/15 via-[#2E4057]/10 to-[#2E4057]/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2E4057]/20 via-[#2E4057]/15 to-[#2E4057]/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#2E4057]/60 via-transparent to-transparent" />
       </div>
 

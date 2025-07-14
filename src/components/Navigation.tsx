@@ -46,12 +46,12 @@ const Navigation = () => {
               >
                 Home
               </button>
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection('waitlist')}
                 className="text-white hover:text-[#D4A95E] transition-colors duration-200 font-medium"
               >
                 Waitlist
-              </button>
+              </button> */}
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-white hover:text-[#D4A95E] transition-colors duration-200 font-medium"
@@ -116,12 +116,12 @@ const Navigation = () => {
             >
               Home
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('waitlist')}
               className="block w-full text-left px-3 py-2 text-white hover:text-[#D4A95E] font-medium"
             >
               Waitlist
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection('about')}
               className="block w-full text-left px-3 py-2 text-white hover:text-[#D4A95E] font-medium"
@@ -156,7 +156,7 @@ const Navigation = () => {
                 className="w-full bg-[#D4A95E] text-[#2E4057] px-4 py-2 rounded-full font-semibold hover:bg-[#D4A95E]/90 transition-colors duration-200 flex items-center justify-center"
               >
                 <Crown className="w-4 h-4 mr-2" />
-                Join Waitlist
+                Belleful is coming 
               </button>
             </div>
           </div>
