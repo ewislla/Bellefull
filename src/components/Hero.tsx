@@ -11,7 +11,7 @@ const Hero = () => {
     seconds: 0
   });
 
-  // Set launch date (45 days from now for demo)
+  
   // Set a fixed launch date that's the same for all users
 const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
   
@@ -129,7 +129,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
         }`}>
           <div className="bg-[#F3E9D2]/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 mb-8 mx-auto max-w-4xl border-2 border-[#D4A95E]/20">
             <h2 className="font-serif text-xl lg:text-2xl font-bold text-[#2E4057] mb-6 tracking-wider">
-              GRAND OPENING IN:
+              LOGO CONTEST ENDS IN:
             </h2>
             
             <div className="grid grid-cols-4 gap-3 lg:gap-6 mb-6">
@@ -171,11 +171,11 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <button 
-            onClick={() => scrollToSection('waitlist')}
+            onClick={() => scrollToSection('logocontest')}
             className="group bg-[#D4A95E] text-[#2E4057] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#D4A95E]/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
           >
             <Crown className="w-5 h-5 mr-2" />
-            Join The Waitlist
+            Join The Logo Contest
             <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">→</div>
           </button>
           <button 
@@ -187,7 +187,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
           </button>
         </div>
 
-        {/* Social Proof */}
+        {/* Social Proof 
         <div className={`mt-8 mb-16 transform transition-all duration-1000 delay-900 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
@@ -198,7 +198,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
           </div>
         </div>
 
-        {/* Scroll Indicator */}
+         Scroll Indicator */}
 
         <div className={`absolute bottom-2 inset-x-0 flex justify-center transition-all duration-1000 delay-1000 ${
       
@@ -208,7 +208,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
             onClick={() => scrollToSection('waitlist')}
             className="text-white hover:text-[#D4A95E] transition-colors duration-200 flex flex-col items-center animate-bounce"
           >
-            <span className="text-sm mb-2">Join The Family</span>
+            {/* <span className="text-sm mb-2">Join The Family</span> */}
             <ChevronDown className="w-6 h-6" />
           </button>
         </div>

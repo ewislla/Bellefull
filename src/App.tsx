@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Waitlist from './components/Waitlist';
+import Logocontest from './components/Logocontest'
+// import Waitlist from './components/Waitlist';
 import About from './components/About';
 import Dishes from './components/Dishes';
 import Experience from './components/Experience';
@@ -36,7 +37,8 @@ function App() {
       <Navigation />
       <main>
         <Hero />
-        <Waitlist />
+      <Logocontest/>
+        {/* <Waitlist /> */}
         <About />
         <Dishes />
         <Experience />

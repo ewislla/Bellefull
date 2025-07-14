@@ -83,12 +83,7 @@ const About = () => {
               </div>
               
               {/* Floating Stats - Responsive */}
-              <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white rounded-xl p-3 lg:p-6 shadow-xl">
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-bold text-[#2E4057]">5+</div>
-                  <div className="text-xs lg:text-sm text-gray-600">Years Experience</div>
-                </div>
-              </div>
+              
               
               <div className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 bg-white rounded-xl p-3 lg:p-6 shadow-xl">
                 <div className="flex items-center">
