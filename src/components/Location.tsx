@@ -54,48 +54,7 @@ const Location = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Map */}
-          <div className={`transform transition-all duration-1000 delay-300 ${
-            isVisible ? 'translate-x-0 opacity-100' : '-translate-x-4 lg:-translate-x-12 opacity-0'
-          }`}>
-            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
-              <div className="relative h-64 sm:h-80 lg:h-96">
-                <div className="w-full h-full bg-gradient-to-br from-[#2E4057] to-[#D4A95E]/20 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <MapPin className="w-12 h-12 lg:w-16 lg:h-16 mx-auto mb-3 lg:mb-4 text-white" />
-                    <h3 className="text-xl lg:text-2xl font-bold mb-2">Interactive Map</h3>
-                    <p className="text-white/80 text-sm lg:text-base">Click to open in maps</p>
-                  </div>
-                </div>
-                <div className="absolute inset-0 hover:bg-black/10 transition-colors duration-200 cursor-pointer" />
-              </div>
-              
-              <div className="p-4 lg:p-6">
-                <div className="flex items-start mb-4">
-                  <MapPin className="w-5 h-5 lg:w-6 lg:h-6 text-[#D4A95E] mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-[#2E4057] text-base lg:text-lg mb-1">Address</h3>
-                    <p className="text-[#2E4057]/70 text-sm lg:text-base">
-                      Beside Goin-ama town hall <br />
-                      Alamieyeseigha expressway<br />
-                      Amassoma, Bayelsa State.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-4 border-t border-gray-200 gap-3 sm:gap-0">
-                  <div className="flex items-center">
-                    <Car className="w-4 h-4 lg:w-5 lg:h-5 text-[#D4A95E] mr-2" />
-                    <span className="text-xs lg:text-sm text-[#2E4057]/70">Valet Parking Available</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Accessibility className="w-4 h-4 lg:w-5 lg:h-5 text-[#D4A95E] mr-2" />
-                    <span className="text-xs lg:text-sm text-[#2E4057]/70">Wheelchair Accessible</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          
           {/* Contact Information */}
           <div className={`transform transition-all duration-1000 delay-500 ${
             isVisible ? 'translate-x-0 opacity-100' : 'translate-x-4 lg:translate-x-12 opacity-0'
@@ -139,7 +98,7 @@ const Location = () => {
                 
                 <div className="space-y-4 lg:space-y-6">
                   <a 
-                    href="tel:+15551234567"
+                    href="tel:+234 8123327359"
                     className="flex items-center p-3 lg:p-4 hover:bg-[#D4A95E]/5 rounded-lg transition-colors duration-200 group"
                   >
                     <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#D4A95E]/10 rounded-full flex items-center justify-center mr-3 lg:mr-4 group-hover:bg-[#D4A95E]/20 transition-colors duration-200">
@@ -153,8 +112,7 @@ const Location = () => {
 
                   <a 
                     href="mailto:hello@belleful.com"
-                    className="flex items-center p-3 lg:p-4 hover:bg-[#D4A95E]/5 rounded-lg transition-colors duration-200 group"
-                  >
+                    className="flex items-center p-3 lg:p-4 hover:bg-[#D4A95E]/5 rounded-lg transition-colors duration-200 group"                  >
                     <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#D4A95E]/10 rounded-full flex items-center justify-center mr-3 lg:mr-4 group-hover:bg-[#D4A95E]/20 transition-colors duration-200">
                       <Mail className="w-5 h-5 lg:w-6 lg:h-6 text-[#D4A95E]" />
                     </div>
