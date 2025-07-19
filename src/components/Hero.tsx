@@ -13,7 +13,7 @@ const Hero = () => {
 
   
   // Set a fixed launch date that's the same for all users
-const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
+const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
   
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -113,7 +113,7 @@ const launchDate = new Date('2025-07-15T18:00:00'); // August 15, 2025 at 6 PM
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-wide leading-tight">
-            BELLEFUL
+            BELLEFUL EXPERIENCE
           </h1>
           <p className="font-script text-xl sm:text-2xl lg:text-3xl text-[#D4A95E] mb-6 tracking-wide">
             Come Craving, Leave Happy

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Star, Clock, Flame, ShoppingCart } from 'lucide-react';
+import { Star, Clock, Utensils, ShoppingBag, Bed, Wifi, Users, Camera, MapPin } from 'lucide-react';
 
-const Dishes = () => {
+const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -22,180 +22,226 @@ const Dishes = () => {
     return () => observer.disconnect();
   }, []);
 
-  const dishes = [
+  const services = [
     {
-      name: "Signature Jollof Rice",
-      description: "Our crown jewel - perfectly spiced jasmine rice cooked with tomatoes, peppers, and aromatic spices",
-      price: "N10,000",
+      name: "Belleful Restaurant",
+      tagline: "Modern Nigerian Cuisine",
+      description: "Experience bold flavors that tell Nigeria's story through a contemporary lens. Our kitchen crafts dishes that honor traditional recipes while embracing modern culinary techniques. Every meal is an Instagram moment waiting to happen.",
+      // price: "₦6,000",
+      // priceLabel: "Average per person",
       image: "assets/jollof.jpg",
       rating: 4.9,
-      cookTime: "25 min",
-      spiceLevel: 2,
-      popular: true
+      icon: Utensils,
+      features: [
+        "Aesthetic interiors designed for social sharing",
+        "Modern Nigerian cuisine with contemporary twist",
+        "Perfect for dates, hangouts, and celebrations",
+        "Instagram-worthy food presentation"
+      ],
+      color: "from-[#2E4057] to-[#D4A95E]",
+      bgColor: "bg-[#F3E9D2]"
     },
     {
-      name: "Premium Suya Platter",
-      description: "Grilled beef skewers marinated in our secret blend of groundnuts and spices, served with fresh vegetables",
-      price: "N30,000",
-      image: "assets/suya.jpg",
+      name: "Belleful Fashion",
+      tagline: "Style That Speaks",
+      description: "Discover fashion-forward menswear that defines the modern Nigerian man. Our curated collection combines contemporary style with cultural pride, offering pieces that make statements both on the street and online.",
+      //price: "Premium",
+      //priceLabel: "Curated Collection",
+      image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       rating: 4.8,
-      cookTime: "20 min",
-      spiceLevel: 3,
-      popular: true
+      icon: ShoppingBag,
+      features: [
+        "Carefully curated menswear collection",
+        "Contemporary style with cultural pride",
+        "Fashion-forward designs for modern men",
+        "Style consultation & personalized shopping"
+      ],
+      color: "from-[#D4A95E] to-[#2E4057]",
+      bgColor: "bg-[#F3E9D2]"
     },
     {
-      name: "Egusi with Pounded Yam",
-      description: "Rich melon seed stew with leafy greens, tender meat, and fresh fish, paired with smooth pounded yam",
-      price: "N20,000",
-      image: "assets/egusi.jpg",
-      rating: 4.7,
-      cookTime: "30 min",
-      spiceLevel: 2,
-      popular: false
-    },
-    {
-      name: "Grilled Tilapia Special",
-      description: "Fresh whole tilapia grilled to perfection with African spices, served with plantain and pepper sauce",
-      price: "N23,000",
-      image: "assets/tilapia.jpg",
+      name: "Belleful Lodging",
+      tagline: "Boutique Comfort",
+      description: "Five beautifully designed rooms that redefine hospitality in Wilberforce Island. Each space is crafted to provide comfort, style, and the perfect backdrop for your Niger Delta experience.",
+      //price: "₦20,000",
+      //priceLabel: "Per night",
+      image: "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       rating: 4.9,
-      cookTime: "35 min",
-      spiceLevel: 2,
-      popular: true
+      icon: Bed,
+      features: [
+        "5 uniquely designed boutique rooms",
+        "Aesthetic interiors perfect for content creation",
+        "Ideal for students, parents, creatives, visitors",
+        "Located in the heart of Wilberforce Island"
+      ],
+      color: "from-[#2E4057]/80 to-[#D4A95E]/80",
+      bgColor: "bg-[#F3E9D2]"
     },
     {
-      name: "Chin Chin Dessert",
-      description: "Traditional sweet fried dough cubes dusted with powdered sugar, served with vanilla ice cream",
-      price: "N16,000",
-      image: "https://images.pexels.com/photos/1998633/pexels-photo-1998633.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      rating: 4.6,
-      cookTime: "15 min",
-      spiceLevel: 0,
-      popular: false
-    },
-    {
-      name: "Pepper Soup",
-      description: "Aromatic broth with tender goat meat, seasoned with African pepper and native spices",
-      price: "N22,000",
-      image: "https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      rating: 4.8,
-      cookTime: "40 min",
-      spiceLevel: 4,
-      popular: false
+      name: "BelleNet",
+      tagline: "Stay Connected in Style",
+      description: "Work, stream, and share seamlessly with our high-speed internet service powered by Starlink. Whether you're a student, creative, or professional, BelleNet keeps you connected to what matters most.",
+      //price: "₦300",
+      //priceLabel: "Per day unlimited",
+      image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      rating: 4.7,
+      icon: Wifi,
+      features: [
+        "High-speed internet powered by Starlink",
+        "Perfect for remote work, streaming, social media",
+        "Reliable connectivity in stylish environment",
+        "Ideal for students, freelancers, digital nomads"
+      ],
+      color: "from-[#D4A95E]/70 to-[#2E4057]/70",
+      bgColor: "bg-[#F3E9D2]"
     }
   ];
 
-  const renderSpiceLevel = (level: number) => {
-    return (
-      <div className="flex items-center">
-        {[...Array(5)].map((_, i) => (
-          <Flame 
-            key={i} 
-            className={`w-3 h-3 ${i < level ? 'text-red-500' : 'text-gray-300'}`}
-          />
-        ))}
-      </div>
-    );
-  };
-
   return (
-    <section id="dishes" ref={sectionRef} className="py-12 sm:py-16 lg:py-32 bg-[#2E4057] overflow-hidden">
+    <section id="services" ref={sectionRef} className="py-12 sm:py-16 lg:py-32 bg-[#2E4057] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className={`text-center mb-12 lg:mb-16 transform transition-all duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 lg:mb-6">
-            Signature Dishes
+            The Full Experience
           </h2>
           <p className="text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-            Each dish is a masterpiece, crafted with authentic ingredients and generations of culinary wisdom
+            Four distinct services, one incredible destination. Everything you need for the perfect lifestyle experience.
           </p>
           <div className="mt-6 lg:mt-8 w-24 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
         </div>
 
-        {/* Dishes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {dishes.map((dish, index) => (
-            <div 
-              key={index}
-              className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-              }`}
-              style={{ transitionDelay: `${300 + index * 150}ms` }}
-            >
-              {/* Image */}
-              <div className="relative overflow-hidden">
-                <img 
-                  src={dish.image} 
-                  alt={dish.name}
-                  className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                
-                {/* Popular Badge */}
-                {dish.popular && (
-                  <div className="absolute top-3 left-3 bg-[#D4A95E] text-[#2E4057] px-2 py-1 rounded-full text-xs font-semibold">
-                    Popular
-                  </div>
-                )}
-
-                {/* Rating */}
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center">
-                  <Star className="w-3 h-3 text-[#D4A95E] mr-1" />
-                  <span className="text-xs font-semibold text-[#2E4057]">{dish.rating}</span>
-                </div>
-
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#2E4057]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-[#D4A95E] text-[#2E4057] px-4 py-2 rounded-full font-semibold hover:bg-[#D4A95E]/90 transform hover:scale-105 transition-all duration-200 flex items-center text-sm">
-                    <ShoppingCart className="w-4 h-4 mr-2" />
-                    Order Now
-                  </button>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-4 lg:p-6">
-                <div className="flex justify-between items-start mb-2 lg:mb-3">
-                  <h3 className="font-serif text-lg lg:text-xl font-bold text-[#2E4057] group-hover:text-[#D4A95E] transition-colors duration-200">
-                    {dish.name}
-                  </h3>
-                  <span className="text-xl lg:text-2xl font-bold text-[#D4A95E]">{dish.price}</span>
-                </div>
-
-                <p className="text-gray-600 text-sm leading-relaxed mb-3 lg:mb-4">
-                  {dish.description}
-                </p>
-
-                {/* Meta Info */}
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center text-xs lg:text-sm text-gray-500">
-                    <Clock className="w-3 h-3 lg:w-4 lg:h-4 mr-1" />
-                    <span>{dish.cookTime}</span>
-                  </div>
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div 
+                key={index}
+                className={`group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-3 ${
+                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+                }`}
+                style={{ transitionDelay: `${300 + index * 200}ms` }}
+              >
+                {/* Image Header */}
+                <div className="relative overflow-hidden h-48 lg:h-56">
+                  <img 
+                    src={service.image} 
+                    alt={service.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                   
-                  <div className="flex items-center">
-                    <span className="text-xs text-gray-500 mr-2">Spice:</span>
-                    {renderSpiceLevel(dish.spiceLevel)}
+                  {/* Gradient Overlay */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
+                  
+                  {/* Service Icon */}
+                  <div className={`absolute top-4 left-4 p-3 rounded-2xl ${service.bgColor} backdrop-blur-sm shadow-lg`}>
+                    <IconComponent className="w-6 h-6 text-[#2E4057]" />
+                  </div>
+
+                  {/* Rating */}
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-full px-3 py-2 flex items-center shadow-lg">
+                    <Star className="w-4 h-4 text-[#D4A95E] mr-1" />
+                    <span className="text-sm font-bold text-[#2E4057]">{service.rating}</span>
+                  </div>
+
+                  {/* Price Badge */}
+                  <div className="absolute bottom-4 right-4 bg-[#D4A95E]/95 backdrop-blur-sm text-[#2E4057] px-4 py-2 rounded-full shadow-lg">
+                    <div className="text-lg font-bold">{service.price}</div>
+                    <div className="text-xs opacity-80">{service.priceLabel}</div>
                   </div>
                 </div>
+
+                {/* Content */}
+                <div className="p-6 lg:p-8">
+                  <div className="mb-4">
+                    <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E4057] mb-2 group-hover:text-[#D4A95E] transition-colors duration-300">
+                      {service.name}
+                    </h3>
+                    <p className="font-script text-lg text-[#D4A95E] mb-4">
+                      {service.tagline}
+                    </p>
+                  </div>
+
+                  <p className="text-gray-600 text-sm lg:text-base leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+
+                  {/* Features */}
+                  <div className="space-y-3 mb-6">
+                    {service.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-start">
+                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color} mt-2 mr-3 flex-shrink-0`}></div>
+                        <span className="text-gray-700 text-sm lg:text-base">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Action Buttons
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <button className={`flex-1 bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-xl font-semibold text-sm lg:text-base hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center`}>
+                      <IconComponent className="w-4 h-4 mr-2" />
+                      Book Now
+                    </button>
+                    <button className="flex-1 border-2 border-gray-200 text-[#2E4057] px-6 py-3 rounded-xl font-semibold text-sm lg:text-base hover:border-[#D4A95E] hover:text-[#D4A95E] transition-all duration-300 flex items-center justify-center">
+                      <Camera className="w-4 h-4 mr-2" />
+                      View Gallery
+                    </button>
+                  </div>*/}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* CTA */}
-        <div className={`text-center mt-12 lg:mt-16 transform transition-all duration-1000 delay-1000 ${
+        {/* Experience Summary */}
+        <div className={`mt-12 lg:mt-20 text-center transform transition-all duration-1000 delay-1200 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <button className="group bg-[#D4A95E] text-[#2E4057] px-6 py-3 lg:px-8 lg:py-4 rounded-full font-semibold text-base lg:text-lg hover:bg-[#D4A95E]/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-            View Full Menu
-            <div className="ml-2 inline-block transform group-hover:translate-x-1 transition-transform duration-200">→</div>
-          </button>
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 lg:p-8 max-w-4xl mx-auto border border-white/20">
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-4">
+              Why Choose Belleful Experience?
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="bg-[#D4A95E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-[#D4A95E]" />
+                </div>
+                <h4 className="text-white font-semibold text-lg mb-2">All-in-One Destination</h4>
+                <p className="text-gray-300 text-sm">Four services, one incredible location</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-[#D4A95E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Camera className="w-8 h-8 text-[#D4A95E]" />
+                </div>
+                <h4 className="text-white font-semibold text-lg mb-2">Instagram-Ready</h4>
+                <p className="text-gray-300 text-sm">Every corner designed for social sharing</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-[#D4A95E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-[#D4A95E]" />
+                </div>
+                <h4 className="text-white font-semibold text-lg mb-2">Prime Location</h4>
+                <p className="text-gray-300 text-sm">Heart of Wilberforce Island community</p>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <button className="bg-[#D4A95E] text-[#2E4057] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#D4A95E]/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Experience It All
+                <span className="ml-2">→</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Dishes;
+export default Services;

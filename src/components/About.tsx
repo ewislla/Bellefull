@@ -32,7 +32,7 @@ const About = () => {
           }`}>
             <div className="relative">
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-[#2E4057] mb-4 lg:mb-6">
-                Our Story
+                More Than a Place. It's an Experience.
               </h2>
               <div className="absolute -top-2 -left-2 lg:-top-4 lg:-left-4 w-12 h-12 lg:w-20 lg:h-20 opacity-20">
                 <div className="w-full h-full" style={{
@@ -43,30 +43,25 @@ const About = () => {
 
             <div className="space-y-4 lg:space-y-6 text-[#2E4057]">
               <p className="text-base lg:text-lg leading-relaxed">
-                Born from a deep love for authentic African flavors and a passion for bringing people together, 
-                Belleful is more than just a restaurant it's a celebration of heritage, culture, and the 
-                universal language of exceptional food.
+                Belleful Experience is a multi-vertical lifestyle brand built for young thriving Nigerians combining modern Nigerian
+cuisine, fashion-forward menswear, boutique lodging, and now a digital utility layer (BelleNet) into one aesthetic, experience-
+driven space. 
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
-                Our kitchen is where tradition meets innovation, where time honored recipes passed down 
-                through generations are elevated with modern culinary techniques and premium ingredients. 
-                Every dish tells a story, every flavor carries memory.
+                Located on Wilberforce Island, near Niger Delta University, Belleful is designed to be the most iconic brand
+experience in the region, offering more than services offering a vibe, a story, and a destination.
               </p>
-              <p className="text-base lg:text-lg leading-relaxed">
-                We believe that great food has the power to create connections, build community, and 
-                bring joy to everyday moments. When you dine with us, you're not just having a meal 
-                you're experiencing the warmth of African hospitality and the richness of our culture.
-              </p>
+              
             </div>
 
-            {/* Quote */}
+            {/* Quote
             <div className="mt-6 lg:mt-8 p-4 lg:p-6 bg-white/50 rounded-lg border-l-4 border-[#D4A95E]">
               <p className="font-script text-lg lg:text-xl text-[#2E4057] italic">
                 "Every time I eat here, I'm transported back to my grandmother's kitchen. 
                 The flavors are so authentic, so full of love. This is what home tastes like."
               </p>
               <p className="text-[#D4A95E] font-semibold mt-2">- Amara K., Regular Customer</p>
-            </div>
+            </div>*/}
           </div>
 
           {/* Image - African Chef Portrait */}
