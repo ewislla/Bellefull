@@ -15,7 +15,7 @@ import {
 
 const LogoContest = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [participantsCount, setParticipantsCount] = useState(0);
+  const [participantsCount, setParticipantsCount] = useState(5);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

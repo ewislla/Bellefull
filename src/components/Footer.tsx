@@ -187,7 +187,7 @@ const Footer = () => {
             <div className="flex items-center text-sm text-gray-300 mb-4 md:mb-0">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 mx-1" />
-              <span>in New York</span>
+              <span>in Nigeria</span>
             </div>
             
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-300">

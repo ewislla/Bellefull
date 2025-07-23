@@ -22,7 +22,7 @@ const Location = () => {
     return () => observer.disconnect();
   }, []);
 
-  const hours = [
+  /*const hours = [
     { day: 'Monday', hours: 'Closed' },
     { day: 'Tuesday', hours: '5:00 PM - 10:00 PM' },
     { day: 'Wednesday', hours: '5:00 PM - 10:00 PM' },
@@ -30,7 +30,7 @@ const Location = () => {
     { day: 'Friday', hours: '5:00 PM - 11:00 PM' },
     { day: 'Saturday', hours: '12:00 PM - 11:00 PM' },
     { day: 'Sunday', hours: '12:00 PM - 9:00 PM' }
-  ];
+  ];*/
 
   const getCurrentDay = () => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -60,7 +60,7 @@ const Location = () => {
             isVisible ? 'translate-x-0 opacity-100' : 'translate-x-4 lg:translate-x-12 opacity-0'
           }`}>
             <div className="space-y-6 lg:space-y-8">
-              {/* Hours */}
+              {/* Hours 
               <div className="bg-white rounded-3xl p-6 lg:p-8 shadow-xl">
                 <div className="flex items-center mb-4 lg:mb-6">
                   <Clock className="w-6 h-6 lg:w-8 lg:h-8 text-[#D4A95E] mr-3" />
