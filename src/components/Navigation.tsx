@@ -36,7 +36,7 @@ const Navigation = () => {
               <img 
                 src="/assets/logo.png" 
                 alt="Belleful Logo" 
-                className="h-16 lg:h-24 w-auto"
+                className="h-20 lg:h-32 w-auto"
               />
             </button>
           </div>
