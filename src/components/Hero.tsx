@@ -112,9 +112,13 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
         <div className={`transform transition-all duration-1000 delay-300 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-wide leading-tight">
-            BELLEFUL EXPERIENCE
-          </h1>
+          <div className="mb-6 flex justify-center">
+            <img 
+              src="/assets/logo.png" 
+              alt="Belleful Logo" 
+              className="h-24 sm:h-32 lg:h-40 xl:h-48 w-auto drop-shadow-2xl"
+            />
+          </div>
           <p className="font-script text-xl sm:text-2xl lg:text-3xl text-[#D4A95E] mb-6 tracking-wide">
             Come Craving, Leave Happy
           </p>
