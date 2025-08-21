@@ -11,15 +11,15 @@ const Hero = () => {
     seconds: 0
   });
 
-  
+
   // Set a fixed launch date that's the same for all users
 const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 200);
-    
+
     // Create steam animation particles
     const particles = Array.from({ length: 6 }, (_, i) => ({
       id: i,
@@ -116,7 +116,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
             <img 
               src="/assets/logo.png" 
               alt="Belleful Logo" 
-              className="h-52 sm:h-40 lg:h-56 xl:h-64 w-auto drop-shadow-2xl"
+              className="h-32 sm:h-40 lg:h-56 xl:h-64 w-auto drop-shadow-2xl logo-crop-hero"
             />
           </div>
           <p className="font-script text-xl sm:text-2xl lg:text-3xl text-[#D4A95E] mb-6 tracking-wide">
@@ -135,7 +135,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
             <h2 className="font-serif text-xl lg:text-2xl font-bold text-[#2E4057] mb-6 tracking-wider">
               LOGO CONTEST ENDS IN:
             </h2>
-            
+
             <div className="grid grid-cols-4 gap-3 lg:gap-6 mb-6">
               {[
                 { value: timeLeft.days, label: 'DAYS' },
@@ -163,7 +163,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
                 style={{ width: '65%' }}
               />
             </div>
-            
+
             <p className="text-[#2E4057]/70 text-sm lg:text-base">
               The countdown to authentic Afro-contemporary dining begins...
             </p>
@@ -205,7 +205,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
          Scroll Indicator */}
 
         <div className={`absolute bottom-2 inset-x-0 flex justify-center transition-all duration-1000 delay-1000 ${
-      
+
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <button 
