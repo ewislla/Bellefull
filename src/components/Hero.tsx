@@ -116,7 +116,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
             <img 
               src="/assets/logo.png" 
               alt="Belleful Logo" 
-              className="h-32 sm:h-40 lg:h-56 xl:h-64 w-auto drop-shadow-2xl"
+              className="h-52 sm:h-40 lg:h-56 xl:h-64 w-auto drop-shadow-2xl"
             />
           </div>
           <p className="font-script text-xl sm:text-2xl lg:text-3xl text-[#D4A95E] mb-6 tracking-wide">
