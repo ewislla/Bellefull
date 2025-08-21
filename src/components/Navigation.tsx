@@ -31,9 +31,13 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-2xl lg:text-3xl font-bold text-[#D4A95E] font-serif hover:text-[#D4A95E]/80 transition-colors duration-200"
+              className="hover:opacity-80 transition-opacity duration-200"
             >
-              BELLEFUL
+              <img 
+                src="/assets/logo.png" 
+                alt="Belleful Logo" 
+                className="h-8 lg:h-12 w-auto"
+              />
             </button>
           </div>
 
