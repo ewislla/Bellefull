@@ -123,7 +123,7 @@ const launchDate = new Date('2025-08-10T00:00:00'); // August 15, 2025 at 6 PM
             Come Craving, Leave Happy
           </p>
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Bold Afro-Contemporary Cuisine That Hits Different
+            The Afro-Modern Escape - Food, Fashion, Stay
           </p>
         </div>
 

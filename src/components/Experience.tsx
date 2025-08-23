@@ -31,23 +31,6 @@ const Experience = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const features = [
-    {
-      icon: Music,
-      title: "Authentic Vibes",
-      description: "Immerse yourself in the rhythms of Africa with carefully curated playlists featuring traditional and contemporary African music"
-    },
-    {
-      icon: Users,
-      title: "Cultural Community",
-      description: "Join a diverse family of food lovers who appreciate authentic flavors and warm hospitality"
-    },
-    {
-      icon: Heart,
-      title: "Premium Service",
-      description: "Our attentive staff ensures every moment is memorable, from your first greeting to your last bite"
-    }
-  ];
 
   const testimonials = [
     {
@@ -94,30 +77,14 @@ const Experience = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className={`text-center transform transition-all duration-1000 ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-              }`}
-              style={{ transitionDelay: `${300 + index * 200}ms` }}
-            >
-              <div className="w-20 h-20 bg-[#D4A95E]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#D4A95E]/20 transition-colors duration-300">
-                <feature.icon className="w-10 h-10 text-[#D4A95E]" />
-              </div>
-              <h3 className="font-serif text-2xl font-bold text-[#2E4057] mb-4">{feature.title}</h3>
-              <p className="text-[#2E4057]/70 leading-relaxed">{feature.description}</p>
-            </div>
-          ))}
-        </div>
+        
 
         {/* Testimonials Carousel */}
         <div className={`bg-white rounded-3xl p-8 lg:p-12 shadow-xl transform transition-all duration-1000 delay-700 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
         }`}>
           <div className="text-center mb-8">
-            <h3 className="font-serif text-3xl font-bold text-[#2E4057] mb-4">What Our Family Says</h3>
+            <h3 className="font-serif text-3xl font-bold text-[#2E4057] mb-4">What Our Community Says</h3>
             <div className="w-16 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 

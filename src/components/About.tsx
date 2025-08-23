@@ -43,9 +43,8 @@ const About = () => {
 
             <div className="space-y-4 lg:space-y-6 text-[#2E4057]">
               <p className="text-base lg:text-lg leading-relaxed">
-                Belleful Experience is a multi-vertical lifestyle brand built for young thriving Nigerians combining modern Nigerian
-cuisine, fashion-forward menswear, boutique lodging, and now a digital utility layer (BelleNet) into one aesthetic, experience-
-driven space. 
+               
+Belleful Experience is a multi vertical lifestyle brand built for young thriving Nigerians combining modern Nigerian cuisine, fashion forward menswear and  lodging into one aesthetic experience.
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
                 Located on Wilberforce Island, near Niger Delta University, Belleful is designed to be the most iconic brand

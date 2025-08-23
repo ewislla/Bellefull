@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-[#D4A95E] mb-4">
-              BELLEFUL
+              BELLEFUL EXPERIENCE
             </h2>
             <p className="font-script text-lg text-[#D4A95E] mb-4">
               Come Craving, Leave Happy
@@ -191,7 +191,7 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-300">
-              <p>&copy; 2025 Belleful Restaurant. All rights reserved.</p>
+              <p>&copy; 2025 Belleful Experience. All rights reserved.</p>
               <div className="flex space-x-6">
                 <a href="#" className="hover:text-[#D4A95E] transition-colors duration-200">Privacy Policy</a>
                 <a href="#" className="hover:text-[#D4A95E] transition-colors duration-200">Terms of Service</a>

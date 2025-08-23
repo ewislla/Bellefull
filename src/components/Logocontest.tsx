@@ -15,7 +15,7 @@ import {
 
 const LogoContest = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [participantsCount, setParticipantsCount] = useState(5);
+  const [participantsCount, setParticipantsCount] = useState(57);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -101,9 +101,9 @@ const LogoContest = () => {
           </h2>
           
           <p className="text-base sm:text-lg lg:text-xl text-white/80 max-w-2xl lg:max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Help us create a visual identity that captures the essence of authentic African cuisine. 
+            Bring Belleful to life with a logo that celebrates African flavor, style and culture. 
             <span className="text-[#D4A95E] font-semibold"> Win ₦50,000 </span>
-            and become our designer!
+            and leave your mark as our designer.
           </p>
 
           {/* Contest Stats */}
