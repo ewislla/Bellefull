@@ -25,31 +25,25 @@ const Experience = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+      setCurrentTestimonial((prev) => (prev + 1) % communityImages.length);
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
 
-  const testimonials = [
+  const communityImages = [
     {
-      name: "Adama Johnson",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
-      text: "The atmosphere here is incredible! The music, the decor, the energy - it all comes together to create something truly special. And the food? Absolutely divine!",
-      rating: 5
+      src: "assets/com1.jpg",
+      alt: "Community member enjoying Belleful experience"
     },
     {
-      name: "Marcus Thompson",
-      image: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
-      text: "I've traveled across West Africa, and this is the most authentic jollof rice I've had outside of Lagos. The flavors transported me back to my childhood.",
-      rating: 5
+      src: "assets/com2.jpg", 
+      alt: "Happy customers at Belleful restaurant"
     },
     {
-      name: "Fatima Al-Hassan",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
-      text: "Every dish tells a story, and the staff makes you feel like family. This isn't just dining - it's a cultural experience that nourishes the soul.",
-      rating: 5
+      src: "assets/com3.jpg",
+      alt: "Community gathering at Belleful"
     }
   ];
 
@@ -79,17 +73,17 @@ const Experience = () => {
         {/* Features Grid */}
         
 
-        {/* Testimonials Carousel */}
+        {/* Community Images Carousel */}
         <div className={`bg-white rounded-3xl p-8 lg:p-12 shadow-xl transform transition-all duration-1000 delay-700 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
         }`}>
           <div className="text-center mb-8">
-            <h3 className="font-serif text-3xl font-bold text-[#2E4057] mb-4">What Our Community Says</h3>
+            <h3 className="font-serif text-3xl font-bold text-[#2E4057] mb-4">Our Community</h3>
             <div className="w-16 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 
           <div className="relative max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
+            {communityImages.map((image, index) => (
               <div 
                 key={index}
                 className={`transition-all duration-500 ${
@@ -97,26 +91,19 @@ const Experience = () => {
                 }`}
               >
                 <div className="text-center">
-                  <div className="flex justify-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Award key={i} className="w-6 h-6 text-[#D4A95E] mx-1" />
-                    ))}
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
                   
-                  <blockquote className="text-xl lg:text-2xl text-[#2E4057] font-medium mb-8 leading-relaxed">
-                    "{testimonial.text}"
-                  </blockquote>
-                  
-                  <div className="flex items-center justify-center">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover mr-4"
-                    />
-                    <div className="text-left">
-                      <div className="font-semibold text-[#2E4057] text-lg">{testimonial.name}</div>
-                      <div className="text-[#2E4057]/60 text-sm">Verified Customer</div>
-                    </div>
+                  <div className="flex justify-center mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Award key={i} className="w-6 h-6 text-[#D4A95E] mx-1" />
+                    ))}
                   </div>
                 </div>
               </div>
@@ -124,7 +111,7 @@ const Experience = () => {
 
             {/* Carousel Indicators */}
             <div className="flex justify-center mt-8 space-x-2">
-              {testimonials.map((_, index) => (
+              {communityImages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
