@@ -82,7 +82,7 @@ const Experience = () => {
             <div className="w-16 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 
-          <div className="relative max-w-4xl mx-auto">
+          <div className="relative max-w-5xl mx-auto"></div>
             {communityImages.map((image, index) => (
               <div 
                 key={index}
@@ -95,7 +95,7 @@ const Experience = () => {
                     <img 
                       src={image.src} 
                       alt={image.alt}
-                      className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                      className="w-full h-80 sm:h-96 lg:h-[32rem] xl:h-[36rem] object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
