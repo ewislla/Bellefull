@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Music, Users, Heart, Award, Camera, Volume2 } from 'lucide-react';
+import { Music, Users, Heart, Award, Camera, Volume2, CheckCircle, Star } from 'lucide-react';
 
 const Experience = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,15 +71,17 @@ const Experience = () => {
         </div>
 
         {/* Features Grid */}
-        
+
 
         {/* Community Images Carousel */}
         <div className={`bg-white rounded-3xl p-8 lg:p-12 shadow-xl transform transition-all duration-1000 delay-700 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
         }`}>
-          <div className="text-center mb-8">
-            <h3 className="font-serif text-3xl font-bold text-[#2E4057] mb-4">Our Community</h3>
-            <div className="w-16 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
+          <div className="text-center mb-8 lg:mb-16">
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#2E4057] mb-4 lg:mb-6">
+              Our Community
+            </h2>
+            <div className="w-20 sm:w-24 lg:w-32 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 
           <div className="relative max-w-5xl mx-auto">
@@ -99,7 +101,7 @@ const Experience = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
-                  
+
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Award key={i} className="w-6 h-6 text-[#D4A95E] mx-1" />
