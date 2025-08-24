@@ -152,29 +152,7 @@ const Location = () => {
           </div>
         </div>
 
-        {/* Neighborhood Description */}
-        <div className={`mt-16 lg:mt-20 text-center transform transition-all duration-1000 delay-700 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-        }`}>
-          <div className="bg-white rounded-3xl p-6 lg:p-12 shadow-xl max-w-4xl mx-auto">
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E4057] mb-4 lg:mb-6">
-              In the Heart of Culture
-            </h3>
-            <p className="text-base lg:text-lg text-[#2E4057]/70 leading-relaxed mb-4 lg:mb-6">
-              Nestled in the vibrant Heritage District, Belleful sits at the crossroads of tradition and innovation. 
-              Our neighborhood is a melting pot of cultures, art galleries, and historic landmarks. 
-              Just steps away from the Cultural Center and the famous Heritage Market, we're surrounded by 
-              the energy and spirit that inspires our cuisine every day.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2 lg:gap-4 text-xs lg:text-sm text-[#2E4057]/60">
-              <span>• 2 mins from Heritage Market</span>
-              <span>• 5 mins from Cultural Center</span>
-              <span>• Multiple bus routes nearby</span>
-              <span>• Street parking available</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </section>
   );
 };
