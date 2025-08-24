@@ -84,7 +84,7 @@ const Experience = () => {
             <div className="w-20 sm:w-24 lg:w-32 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 
-          <div className="relative max-w-5xl mx-auto">
+          <div className="relative max-w-6xl mx-auto">
             {communityImages.map((image, index) => (
               <div 
                 key={index}
@@ -93,18 +93,20 @@ const Experience = () => {
                 }`}
               >
                 <div className="text-center">
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6" style={{ aspectRatio: '16/9' }}>
-                    <img 
-                      src={image.src} 
-                      alt={image.alt}
-                      className="w-full h-full object-cover object-center"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-lg mb-6 mx-2 sm:mx-0">
+                    <div className="w-full" style={{ aspectRatio: '16/9', minHeight: '200px' }}>
+                      <img 
+                        src={image.src} 
+                        alt={image.alt}
+                        className="w-full h-full object-cover object-center"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
                   </div>
 
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="w-6 h-6 text-[#D4A95E] mx-1" />
+                      <Award key={i} className="w-5 h-5 sm:w-6 sm:h-6 text-[#D4A95E] mx-1" />
                     ))}
                   </div>
                 </div>
