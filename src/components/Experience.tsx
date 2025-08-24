@@ -82,7 +82,7 @@ const Experience = () => {
             <div className="w-16 h-1 bg-[#D4A95E] mx-auto rounded-full"></div>
           </div>
 
-          <div className="relative max-w-5xl mx-auto"></div>
+          <div className="relative max-w-5xl mx-auto">
             {communityImages.map((image, index) => (
               <div 
                 key={index}
