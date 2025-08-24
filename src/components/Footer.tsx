@@ -22,8 +22,7 @@ const Footer = () => {
               Come Craving, Leave Happy
             </p>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              Authentic Afro-contemporary cuisine that celebrates culture, 
-              tradition, and the universal joy of exceptional food.
+              The Afro-Modern Escape - Food, Fashion, Stay
             </p>
             
             {/* Social Media */}
