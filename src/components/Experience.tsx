@@ -93,11 +93,11 @@ const Experience = () => {
                 }`}
               >
                 <div className="text-center">
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6" style={{ aspectRatio: '16/9' }}>
                     <img 
                       src={image.src} 
                       alt={image.alt}
-                      className="w-full h-80 sm:h-96 lg:h-[32rem] xl:h-[36rem] object-cover object-center"
+                      className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
